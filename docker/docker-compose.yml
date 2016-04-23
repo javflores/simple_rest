@@ -1,7 +1,7 @@
 version: "2"
 
 services:
-  workstation-0:
+  workstation-8:
     image: registry.training.local/workstation-8:${IMAGE_VERSION} 
     network_mode: bridge
     ports:
