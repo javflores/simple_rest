@@ -19,7 +19,7 @@ public class SimpleRestApplication {
         };
     }
     
-    private static Route respondWith(Object responseBody){
+    private static Route respondWithHtml(Object responseBody){
         return (request, response) -> {
             response.type("text/html");
             response.status(HttpStatus.OK_200);
