@@ -4,5 +4,7 @@ services:
   workstation-8:
     image: registry.training.local/workstation-8:${IMAGE_VERSION} 
     network_mode: bridge
+    enviroment:
+      - "SEVICE_NAME=juan"
     ports:
       - "4567"
