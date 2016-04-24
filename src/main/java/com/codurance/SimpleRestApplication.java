@@ -18,4 +18,12 @@ public class SimpleRestApplication {
             return responseBody;
         };
     }
+    
+    private static Route respondWith(Object responseBody){
+        return (request, response) -> {
+            response.type("text/html");
+            response.status(HttpStatus.OK_200);
+            return responseBody;
+        };
+    }
 }
